@@ -1,0 +1,186 @@
+---
+title: "Assessing Premier League Player Valuation: The Impact of Age, Position, Playtime and Other Variables on Market Value" 
+author: "Stat Warriors"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+header-includes:
+- \usepackage{setspace}
+- \onehalfspacing
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE, comment=NA, warnings=FALSE,message=FALSE)
+```
+
+```{r, echo=FALSE, warning=FALSE,results=FALSE}
+## Use this chunk for reading in packages.
+## Use this chunk for reading in the data, combining the data, and any other major data cleaning that is not relevant to show.
+## Remove the ## before all code.
+library(dplyr)
+library(corrplot)
+library(Hmisc)
+library(car)
+library(olsrr)
+library(caret)
+library(tidyverse)
+
+soccerdata<-read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTTPKPRxczOS1SkmereE95_6ujc9b6oEcjJGCOSsPQAD-Cwc82uoC-c1rWLbYwqX2s_MftoTDTldHrf/pub?gid=443710304&single=true&output=csv",header=T)
+```
+
+
+\begin{center}
+
+\includegraphics{/Users/sakethvangara/Downloads/soccer_ball_holding_money.jpeg}
+
+
+\end{center}
+
+\newpage
+
+## Introduction
+
+## Methods and Analysis
+
+## Results
+
+## Conclusions
+
+\newpage
+
+## Appendix A: Data Dictionary
+
+|    Variable Name     | Abbreviated Name |              Description              |
+|:------------------:|:----------------:|:--------------------------------:|
+| Variable 1 Full Name |   Abbreviated1   | Write the description of the variable |
+| Variable 2 Full Name |   Abbreviated2   | Write the description of the variable |
+
+\newpage
+
+## Appendix B: Data Rows
+
+```{r, echo=FALSE}
+# Use head() function to output first several rows
+head(soccerdata)
+```
+
+\newpage
+
+## Appendix C: Tables and Figures
+
+```{r, echo=FALSE, warning=FALSE,results=FALSE}
+## This code chunk can be used to execute any functions or summaries 
+## that will not be included in your appendix
+```
+
+```{r, echo=FALSE}
+## Use this section to output the summary of your final model
+## Include the relevant plots from EDA, assumptions, and your additional techniques
+## This should NOT be a dump of all of your plots and outputs.
+## Refer to the Rmarkdown guide for sizing information on your plots
+
+#reduced data table (removed variables not being used)
+soccerdatared <- select(soccerdata, Valuation, Age, Position, Club.Ranking.Group, minutes_played_overall, England, appearances_overall, goals_overall, assists_overall, clean_sheets_overall, conceded_overall, goals_involved_per_90_overall, min_per_match)
+
+#data table with only quantitative variables
+soccerdataquant <- select(soccerdata, Valuation, Age, minutes_played_overall, appearances_overall, goals_overall, assists_overall, clean_sheets_overall, conceded_overall, goals_involved_per_90_overall, min_per_match)
+
+#RESPONSE TRANSFORMATION STUFF
+#log response transformation
+soccerdatared$logval<-log(soccerdatared$Valuation)
+hist(soccerdatared$logval, xlab="Valuation", main="Histogram of log Valuation") 
+soccerdataquant$logval<-log(soccerdataquant$Valuation)
+
+#EDA ON LOG VERSION OF RESPONSE
+plot(soccerdatared$Age, soccerdataquant$logval,xlab="Age",ylab="log of Valuation", main=)
+plot(soccerdatared$minutes_played_overall, soccerdataquant$logval, xlab="Minutes Played Overall", ylab="log of Valuation")
+
+#Box plots for Qualitative
+boxplot(soccerdatared$logval~Position,soccerdata, ylab="log of Valuation")
+boxplot(soccerdatared$logval~Club.Ranking.Group,soccerdata, ylab="log of Valuation")
+boxplot(soccerdatared$logval~England,soccerdata, ylab="log of Valuation")
+
+#updated model with significant quantitative and qualitative predictors
+soccermod4<-lm(logval~clean_sheets_overall + Age + goals_involved_per_90_overall + min_per_match + Club.Ranking.Group,data=soccerdatared)
+
+# REGRESSION ASSUMPTIONS
+#Residuals Plots of explanatory variables vs residuals
+residualPlots(soccermod4,tests=F)
+
+#Residual vs Fitted and QQ plot
+plot(soccermod4, which=c(1,2)) 
+
+#histogram of residuals
+hist(residuals(soccermod4))
+
+# INFLUENTIAL DIAGNOSTICS
+
+#Cooks Distance Thresholds
+plot(soccermod4,which=4) 
+
+#Leverage vs Studentized Residuals
+influencePlot(soccermod4,fill=F)
+
+#Deleted Studentized Residuals vs PRedicted values
+ols_plot_resid_stud_fit(soccermod4)
+
+
+#We can use various functions to store and view these statistics for all observations
+rstudent(soccermod4) #rstudent gives the deleted studentized residuals
+hatvalues(soccermod4)
+cooks.distance(soccermod4)
+dffits(soccermod4)
+dfbetas(soccermod4)
+
+# FINAL MODEL
+subsetsoccerdatared<-soccerdatared[-c(24,25,38,82,91,97),] #the -c means remove those specific observations
+finalsoccermod<-lm(logval~clean_sheets_overall + Age + goals_involved_per_90_overall + min_per_match + Club.Ranking.Group,data=subsetsoccerdatared)
+summary(finalsoccermod)
+
+# CROSS VALIDATION
+
+# Check for missing values
+colSums(is.na(soccerdatared))
+
+# Remove rows with missing values
+soccerdatared <- na.omit(soccerdatared)
+
+# Confirm no missing values remain
+colSums(is.na(soccerdatared))
+
+
+set.seed(125)
+train.kfold <- trainControl(method = "cv", number = 5)  # 5-fold cross-validation
+
+### Training
+model.kfold <- train(logval~clean_sheets_overall + Age + goals_involved_per_90_overall + min_per_match + Club.Ranking.Group, data = soccerdatared, method = "lm", trControl = train.kfold)
+
+# Present results
+model.kfold
+
+```
+
+\newpage
+
+## Appendix D: References
+
+### Background
+
+1. DiBlasi, L. (2022, April). Footballer Valuations: Valuing World-Class Football Players Against Transfer Fees [Review of Footballer Valuations: Valuing World-Class Football Players Against Transfer Fees]. Bryant University. https://digitalcommons.bryant.edu/cgi/viewcontent.cgi?article=1042&context=honors_economics
+
+2. Metelski, A. (2021, April 30). Factors affecting the value of football players in the transfer market. ResearchGate. https://www.researchgate.net/publication/351335017_Factors_affecting_the_value_of_football_players_in_the_transfer_market
+
+3. Poli, R., Ravenel, L., & Besson, R. (2020, March). Scientific evaluation of the transfer value of football players. Monthly Report 53. https://football-observatory.com/IMG/sites/mr/mr53/en/
+
+4. Zhou, W. (2019). Which Factors Decide the Market Value of Soccer Players: An Empirical Evidence from European League. Clausius Press. https://www.clausiuspress.com/conferences/LNEMSS/EMSD%202019/19EMSD057.pdf
+
+### Data
+
+1.  Players CSV / Football Stats Database to CSV | FootyStats. (2019). Footystats.org. https://footystats.org/download-stats-csv
+
+2. Premier League 18/19. (2018). Transfermarkt.us. https://www.transfermarkt.us/premier-league/startseite/wettbewerb/GB1/saison_id/2018
+
+### Supplemental Code and Analysis Help
+
+1.  Cheng, M. (2023, February 15). Simple examples of cross-validation. RPubs. https://rpubs.com/muxicheng/1004550 
