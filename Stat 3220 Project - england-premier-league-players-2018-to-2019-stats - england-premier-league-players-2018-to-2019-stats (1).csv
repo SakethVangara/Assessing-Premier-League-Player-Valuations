@@ -1,0 +1,102 @@
+Player Name,Age,Position,Current Club,Club Ranking Group,Club Rankings,Valuation,minutes_played_overall,minutes_played_home,minutes_played_away,nationality,England,appearances_overall,appearances_home,appearances_away,goals_overall,goals_home,goals_away,assists_overall,assists_home,assists_away,penalty_goals,penalty_misses,clean_sheets_overall,clean_sheets_home,clean_sheets_away,conceded_overall,conceded_home,conceded_away,yellow_cards_overall,red_cards_overall,goals_involved_per_90_overall,assists_per_90_overall,goals_per_90_overall,goals_per_90_home,goals_per_90_away,min_per_goal_overall,conceded_per_90_overall,min_per_conceded_overall,min_per_match,min_per_card_overall,min_per_assist_overall,cards_per_90_overall,rank_in_league_top_attackers,rank_in_league_top_midfielders,rank_in_league_top_defenders,rank_in_club_top_scorer
+Ederson,29,Goalkeeper,Manchester City,One_Five,1,70,3420,1710,1710,Brazil,No,38,19,19,0,0,0,1,1,0,0,0,20,9,11,23,12,11,2,0,0.03,0.03,0,0,0,0,0.61,149,90,1710,3420,0.05,366,240,13,21
+Kyle Walker,32,Defender,Manchester City,One_Five,1,50,2777,1245,1532,England,Yes,33,15,18,1,1,0,1,0,1,0,0,18,7,11,17,9,8,3,0,0.06,0.03,0.03,0.07,0,2777,0.55,163,84,926,2777,0.1,250,248,10,14
+Raheem Sterling,27,Forward,Manchester City,One_Five,1,140,2777,1256,1521,England,Yes,34,16,18,17,12,5,10,6,4,0,0,18,7,11,19,9,10,3,0,0.88,0.32,0.55,0.86,0.3,163,0.62,146,82,926,278,0.1,12,14,-1,2
+Vincent Kompany,36,Defender,Manchester City,One_Five,1,8,1223,561,662,Belgium,No,17,8,9,1,1,0,0,0,0,0,0,7,3,4,7,3,4,6,0,0.07,0,0.07,0.16,0,1223,0.52,175,72,204,0,0.44,194,384,7,12
+Alisson Becker,30,Goalkeeper,Liverpool,One_Five,2,80,3420,1710,1710,Brazil,No,38,19,19,0,0,0,0,0,0,0,0,21,12,9,19,8,11,1,0,0,0,0,0,0,0,0.5,180,90,3420,0,0.03,417,387,3,16
+Andrew Robertson,28,Defender,Liverpool,One_Five,2,60,3219,1599,1620,Scotland,No,36,18,18,0,0,0,11,9,2,0,0,21,12,9,17,7,10,4,0,0.31,0.31,0,0,0,0,0.48,189,89,805,293,0.11,418,19,2,20
+James Milner,36,Midfielder,Liverpool,One_Five,2,15,1785,646,1139,England,Yes,31,12,19,5,0,5,4,2,2,3,0,18,9,9,11,4,7,7,1,0.45,0.2,0.25,0,0.4,357,0.55,162,58,255,446,0.35,81,65,-1,5
+Sadio Mané,30,Forward,Liverpool,One_Five,2,120,3086,1643,1443,Senegal,No,36,19,17,22,18,4,1,0,1,0,0,20,12,8,18,8,10,2,0,0.67,0.03,0.64,0.99,0.25,140,0.52,171,86,1543,3086,0.06,4,249,-1,1
+Xherdan Shaqiri,31,Midfielder,Liverpool,One_Five,2,25,1058,538,520,Switzerland,No,24,12,12,6,5,1,3,0,3,0,0,12,7,5,5,3,2,2,0,0.77,0.26,0.51,0.84,0.17,176,0.43,212,44,529,353,0.17,15,39,-1,4
+Gonzalo Higuain,34,Forward,Chelsea,One_Five,3,35,1092,496,596,Argentina,No,14,6,8,5,4,1,0,0,0,0,0,5,4,1,15,3,12,0,0,0.41,0,0.41,0.73,0.15,218,1.24,73,78,0,0,0,33,306,-1,5
+Kepa Arrizabalaga,28,Goalkeeper,Chelsea,One_Five,3,60,3240,1620,1620,Spain,No,36,18,18,0,0,0,0,0,0,0,0,14,9,5,38,12,26,2,0,0,0,0,0,0,0,1.06,85,90,1620,0,0.06,364,363,39,24
+Willian,34,Forward,Chelsea,One_Five,3,40,2108,833,1275,Brazil,No,32,15,17,3,2,1,6,3,3,0,0,13,7,6,23,6,17,2,0,0.38,0.26,0.13,0.22,0.07,703,0.98,92,66,1054,351,0.09,132,36,-1,8
+Harry Kane,29,Forward,Tottenham Hotspur,One_Five,4,150,2427,1066,1361,England,Yes,28,12,16,17,6,11,4,2,2,4,0,10,4,6,28,10,18,5,0,0.78,0.15,0.63,0.51,0.73,143,1.04,87,87,485,607,0.19,5,94,-1,1
+Heung-Min Son,30,Forward,Tottenham Hotspur,One_Five,4,80,2048,1161,887,South Korea,No,31,16,15,12,8,4,6,2,4,0,0,11,7,4,20,8,12,3,1,0.79,0.26,0.53,0.62,0.41,171,0.88,102,66,512,341,0.18,14,34,-1,2
+Hugo Lloris,35,Goalkeeper,Tottenham Hotspur,One_Five,4,25,2970,1620,1350,France,No,33,18,15,0,0,0,0,0,0,0,0,12,7,5,30,13,17,0,0,0,0,0,0,0,0,0.91,99,90,0,0,0,339,284,21,19
+Moussa Sissoko,33,Midfielder,Tottenham Hotspur,One_Five,4,25,2336,1187,1149,France,No,29,15,14,0,0,0,3,2,1,0,0,11,6,5,26,10,16,2,0,0.12,0.12,0,0,0,0,1,90,81,1168,779,0.08,354,131,-1,25
+Aaron Ramsey,31,Midfielder,Arsenal,One_Five,5,40,1327,689,638,Wales,No,28,14,14,4,2,2,6,5,1,0,0,7,6,1,12,2,10,0,0,0.68,0.41,0.27,0.26,0.28,332,0.81,111,47,0,221,0,69,8,-1,5
+Alex Iwobi,26,Forward,Arsenal,One_Five,5,25,1972,742,1230,Nigeria,No,35,18,17,3,1,2,6,3,3,0,0,8,7,1,31,8,23,0,0,0.41,0.27,0.14,0.12,0.15,657,1.41,64,56,0,329,0,128,31,-1,8
+Bernd Leno,30,Goalkeeper,Arsenal,One_Five,5,30,2835,1395,1440,Germany,No,32,16,16,0,0,0,0,0,0,0,0,7,6,1,39,12,27,0,0,0,0,0,0,0,0,1.24,73,89,0,0,0,390,413,76,23
+Granit Xhaka,30,Midfielder,Arsenal,One_Five,5,45,2502,1317,1185,Switzerland,No,29,15,14,4,2,2,2,0,2,0,0,7,6,1,35,11,24,10,0,0.22,0.07,0.14,0.14,0.15,626,1.26,71,86,250,1251,0.36,127,183,-1,6
+Nacho Monreal,36,Defender,Arsenal,One_Five,5,8,1861,781,1080,Spain,No,22,10,12,1,1,0,3,0,3,0,0,6,5,1,21,3,18,5,0,0.19,0.15,0.05,0.12,0,1861,1.02,89,85,372,620,0.24,222,98,37,11
+Sead Kolašinac,29,Defender,Arsenal,One_Five,5,20,1891,1127,764,Bosnia and Herzegovina,No,24,14,10,0,0,0,5,3,2,0,0,5,5,0,26,10,16,5,0,0.24,0.24,0,0,0,0,1.24,73,79,378,378,0.24,285,45,75,22
+Anthony Martial,26,Forward,Manchester United,Six_Ten,6,60,1623,743,880,France,No,27,11,16,10,4,6,2,1,1,1,0,5,1,4,25,8,17,2,0,0.67,0.11,0.55,0.48,0.61,162,1.39,65,60,812,812,0.11,13,141,-1,4
+David de Gea,31,Goalkeeper,Manchester United,Six_Ten,6,65,3420,1710,1710,Spain,No,38,19,19,0,0,0,0,0,0,0,0,7,2,5,51,23,28,1,0,0,0,0,0,0,0,1.34,67,90,3420,0,0.03,310,419,91,18
+Fred,29,Midfielder,Manchester United,Six_Ten,6,30,1045,577,468,Brazil,No,17,9,8,1,1,0,1,0,1,0,0,0,0,0,19,8,11,2,0,0.17,0.09,0.09,0.16,0,1045,1.64,55,61,523,1045,0.17,178,156,-1,12
+Jesse Lingard,29,Midfielder,Manchester United,Six_Ten,6,40,1668,963,705,England,Yes,27,15,12,4,1,3,2,1,1,1,0,6,2,4,25,16,9,3,0,0.32,0.11,0.22,0.09,0.38,417,1.35,67,62,556,834,0.16,87,135,-1,5
+Hélder Wander Sousa Azevedo Costa,28,Midfielder,Wolverhampton Wanderers,Six_Ten,7,15,1345,657,688,Portugal,No,25,11,14,1,0,1,2,1,1,0,0,5,3,2,18,10,8,3,0,0.2,0.13,0.07,0,0.13,1345,1.2,75,54,448,673,0.2,200,113,-1,9
+Romain Saïss,32,Midfielder,Wolverhampton Wanderers,Six_Ten,7,5,1144,544,600,Morocco,No,19,8,11,2,1,1,0,0,0,0,0,4,3,1,16,6,10,7,0,0.16,0,0.16,0.17,0.15,572,1.26,72,60,163,0,0.55,115,264,-1,7
+Rui Patrício,34,Goalkeeper,Wolverhampton Wanderers,Six_Ten,7,20,3330,1620,1710,Portugal,No,37,18,19,0,0,0,0,0,0,0,0,8,6,2,43,20,23,0,0,0,0,0,0,0,0,1.16,77,90,0,0,0,405,328,56,19
+André Gomes,29,Midfielder,Everton,Six_Ten,8,28,1986,972,1014,Portugal,No,27,13,14,1,1,0,1,1,0,0,0,10,6,4,27,13,14,7,0,0.09,0.05,0.05,0.09,0,1986,1.22,74,74,284,1986,0.32,220,213,-1,11
+Bernard Anício Caldeira Duarte,30,Midfielder,Everton,Six_Ten,8,20,2128,960,1168,Brazil,No,34,16,18,1,0,1,3,1,2,0,0,14,9,5,19,5,14,5,0,0.17,0.13,0.04,0,0.08,2128,0.8,112,63,426,709,0.21,243,117,-1,12
+Cenk Tosun,31,Forward,Everton,Six_Ten,8,18,1050,536,514,Turkey,No,25,13,12,3,2,1,3,1,2,0,0,7,4,3,16,9,7,3,0,0.51,0.26,0.26,0.34,0.18,350,1.37,66,42,350,350,0.26,74,37,-1,6
+Jordan Pickford,28,Goalkeeper,Everton,Six_Ten,8,40,3420,1710,1710,England,Yes,38,19,19,0,0,0,0,0,0,0,0,14,9,5,44,20,24,1,0,0,0,0,0,0,0,1.16,78,90,3420,0,0.03,409,260,57,14
+Kurt Zouma,28,Defender,Everton,Six_Ten,8,25,2610,1350,1260,France,No,32,16,16,2,1,1,2,0,2,0,0,11,8,3,37,17,20,5,1,0.14,0.07,0.07,0.07,0.07,1305,1.28,71,82,522,1305,0.17,192,185,83,7
+Lucas Digne,29,Defender,Everton,Six_Ten,8,30,2990,1511,1479,France,No,35,17,18,4,2,2,4,2,2,0,0,14,9,5,36,16,20,6,1,0.24,0.12,0.12,0.12,0.12,748,1.08,83,85,427,748,0.21,147,125,42,5
+Richarlison,25,Forward,Everton,Six_Ten,8,50,2679,1283,1396,Brazil,No,35,17,18,13,7,6,1,1,0,0,0,14,9,5,32,15,17,6,1,0.47,0.03,0.44,0.49,0.39,206,1.08,84,77,383,2679,0.24,28,250,-1,1
+Theo Walcott,33,Forward,Everton,Six_Ten,8,18,2122,1114,1008,England,Yes,37,19,18,5,3,2,2,2,0,0,0,13,9,4,33,18,15,1,0,0.3,0.08,0.21,0.24,0.18,424,1.4,64,57,2122,1061,0.04,90,170,-1,4
+Harvey Barnes,24,Midfielder,Leicester City,Six_Ten,9,12,1007,601,406,England,Yes,16,9,7,1,0,1,2,2,0,0,0,3,3,0,16,7,9,0,0,0.27,0.18,0.09,0,0.22,1007,1.43,63,63,0,504,0,175,78,-1,10
+Jonny Evans,34,Defender,Leicester City,Six_Ten,9,10,1995,1074,921,Northern Ireland,No,24,12,12,1,1,0,0,0,0,0,0,8,6,2,22,9,13,2,0,0.05,0,0.05,0.08,0,1995,0.99,91,83,998,0,0.09,224,319,32,11
+Kasper Schmeichel,35,Goalkeeper,Leicester City,Six_Ten,9,12,3420,1710,1710,Denmark,No,38,19,19,0,0,0,0,0,0,0,0,10,6,4,43,18,25,3,0,0,0,0,0,0,0,1.13,80,90,1140,0,0.08,342,302,50,25
+Wilfred Ndidi,25,Midfielder,Leicester City,Six_Ten,9,35,3299,1624,1675,Nigeria,No,38,19,19,2,2,0,0,0,0,0,0,10,6,4,42,18,24,8,0,0.05,0,0.05,0.11,0,1650,1.15,79,87,412,0,0.22,218,332,-1,9
+Aaron Cresswell,32,Defender,West Ham United,Six_Ten,10,10,1589,888,701,England,Yes,20,11,9,0,0,0,1,1,0,0,0,3,2,1,22,12,10,1,0,0.06,0.06,0,0,0,0,1.25,72,79,1589,1589,0.06,290,191,80,20
+Javier Hernandez,34,Forward,West Ham United,Six_Ten,10,,1335,694,641,Mexico,No,25,13,12,7,5,2,1,0,1,0,0,3,1,2,16,8,8,2,0,0.54,0.07,0.47,0.65,0.28,191,1.08,83,53,668,1335,0.13,23,186,-1,3
+Łukasz Fabiański,37,Goalkeeper,West Ham United,Six_Ten,10,5,3420,1710,1710,Poland,No,38,19,19,0,0,0,0,0,0,0,0,7,4,3,48,23,25,0,0,0,0,0,0,0,0,1.26,71,90,0,0,0,391,343,81,19
+Robert Snodgrass,35,Midfielder,West Ham United,Six_Ten,10,7,2222,1108,1114,Scotland,No,33,16,17,2,1,1,5,4,1,0,0,6,3,3,31,16,15,10,0,0.28,0.2,0.08,0.08,0.08,1111,1.26,72,67,222,444,0.41,188,64,-1,8
+Andre Gray,31,Forward,Watford,Eleven_Fifteen,11,15,1358,809,549,England,Yes,29,15,14,7,5,2,2,2,0,0,0,5,3,2,23,16,7,2,0,0.6,0.13,0.46,0.56,0.33,194,1.52,59,47,679,679,0.13,25,109,-1,3
+Ben Foster,39,Goalkeeper,Watford,Eleven_Fifteen,11,3,3420,1710,1710,England,Yes,38,19,19,0,0,0,0,0,0,0,0,7,4,3,57,28,29,1,0,0,0,0,0,0,0,1.5,60,90,3420,0,0.03,365,353,116,18
+Daryl Janmaat,33,Defender,Watford,Eleven_Fifteen,11,6,1521,836,685,Netherlands,No,18,10,8,0,0,0,2,2,0,0,0,3,2,1,22,8,14,3,0,0.12,0.12,0,0,0,0,1.3,69,85,507,761,0.18,395,121,84,23
+Étienne Capoue,34,Midfielder,Watford,Eleven_Fifteen,11,8,2947,1518,1429,France,No,33,17,16,1,0,1,3,2,1,0,0,7,4,3,47,24,23,15,1,0.12,0.09,0.03,0,0.06,2947,1.44,63,89,184,982,0.49,253,153,-1,9
+Gerard Deulofeu,28,Forward,Watford,Eleven_Fifteen,11,25,2082,949,1133,Spain,No,30,14,16,10,3,7,5,3,2,0,0,6,3,3,28,11,17,3,0,0.65,0.22,0.43,0.28,0.56,208,1.21,74,69,694,416,0.13,29,59,-1,1
+Isaac Success,26,Forward,Watford,Eleven_Fifteen,11,5,1037,461,576,Nigeria,No,30,15,15,1,1,0,1,0,1,0,0,5,3,2,20,8,12,4,0,0.17,0.09,0.09,0.2,0,1037,1.74,52,35,259,1037,0.35,181,154,-1,10
+Roberto Pereyra,31,Forward,Watford,Eleven_Fifteen,11,13,2825,1467,1358,Argentina,No,33,17,16,6,5,1,1,0,1,0,0,5,3,2,52,27,25,3,0,0.22,0.03,0.19,0.31,0.07,471,1.66,54,86,942,2825,0.1,97,251,-1,4
+Cheikhou Kouyaté,32,Midfielder,Crystal Palace,Eleven_Fifteen,12,10,1897,865,1032,Senegal,No,31,14,17,0,0,0,2,1,1,0,0,11,6,5,24,7,17,3,0,0.09,0.09,0,0,0,0,1.14,79,61,632,949,0.14,323,161,-1,20
+James Tomkins,33,Defender,Crystal Palace,Eleven_Fifteen,12,8,2563,1140,1423,England,Yes,29,13,16,1,0,1,1,0,1,0,0,10,5,5,34,12,22,6,0,0.07,0.04,0.04,0,0.06,2563,1.19,75,88,427,2563,0.21,235,215,63,9
+Jeffrey Schlupp,29,Defender,Crystal Palace,Eleven_Fifteen,12,10,1665,849,816,Ghana,No,30,14,16,4,1,3,1,1,0,0,0,8,4,4,24,11,13,1,0,0.27,0.05,0.22,0.11,0.33,416,1.3,69,56,1665,1665,0.05,89,209,86,5
+Jordan Ayew,31,Forward,Crystal Palace,Eleven_Fifteen,12,8,1186,616,570,Ghana,No,20,8,12,1,0,1,2,0,2,0,0,6,3,3,13,7,6,3,0,0.23,0.15,0.08,0,0.16,1186,0.99,91,59,395,593,0.23,187,96,-1,12
+Luka Milivojević,31,Midfielder,Crystal Palace,Eleven_Fifteen,12,20,3420,1710,1710,Serbia,No,38,19,19,12,7,5,2,0,2,10,1,12,7,5,47,20,27,10,0,0.37,0.05,0.32,0.37,0.26,285,1.24,73,90,342,1710,0.26,59,210,-1,1
+Mamadou Sakho,32,Defender,Crystal Palace,Eleven_Fifteen,12,15,2417,1170,1247,France,No,27,13,14,0,0,0,0,0,0,0,0,9,5,4,32,10,22,2,0,0,0,0,0,0,0,1.19,76,90,1209,0,0.07,322,403,64,21
+Martin Kelly,32,Defender,Crystal Palace,Eleven_Fifteen,12,3,1110,660,450,England,Yes,13,8,5,0,0,0,0,0,0,0,0,3,2,1,18,11,7,2,0,0,0,0,0,0,0,1.46,62,85,555,0,0.16,326,350,110,18
+Vicente Guaita,35,Goalkeeper,Crystal Palace,Eleven_Fifteen,12,5,1755,1035,720,Spain,No,20,12,8,0,0,0,0,0,0,0,0,7,5,2,21,12,9,2,0,0,0,0,0,0,0,1.08,84,88,878,0,0.1,325,352,45,19
+Wayne Hennessey,35,Goalkeeper,Crystal Palace,Eleven_Fifteen,12,5,1575,675,900,Wales,No,18,8,10,0,0,0,0,0,0,0,0,5,2,3,23,8,15,0,0,0,0,0,0,0,0,1.31,68,88,0,0,0,321,404,87,13
+Wilfried Zaha,29,Midfielder,Crystal Palace,Eleven_Fifteen,12,45,3041,1347,1694,Ivory Coast,No,34,15,19,10,1,9,5,3,2,0,0,10,5,5,45,18,27,10,1,0.44,0.15,0.3,0.07,0.48,304,1.33,68,89,304,608,0.3,63,92,-1,2
+DeAndre Yedlin,29,Defender,Newcastle United,Eleven_Fifteen,13,8,2475,1313,1162,USA,No,29,16,13,1,0,1,2,1,1,0,0,6,4,2,37,19,18,7,1,0.11,0.07,0.04,0,0.08,2475,1.35,67,85,309,1238,0.29,237,177,93,13
+Javier Manquillo,28,Defender,Newcastle United,Eleven_Fifteen,13,5,1097,503,594,Spain,No,18,9,9,0,0,0,3,2,1,0,0,6,3,3,12,6,6,2,0,0.25,0.25,0,0,0,0,0.98,91,61,549,366,0.16,350,40,30,19
+Martin Dúbravka,33,Goalkeeper,Newcastle United,Eleven_Fifteen,13,7,3420,1710,1710,Slovakia,No,38,19,19,0,0,0,0,0,0,0,0,11,5,6,44,23,21,1,0,0,0,0,0,0,0,1.16,78,90,3420,0,0.03,345,317,58,18
+Rondon,33,Forward,Newcastle United,Eleven_Fifteen,13,15,2609,1343,1266,Venezuela,No,32,16,16,11,6,5,7,5,2,0,0,10,5,5,29,14,15,1,0,0.62,0.24,0.38,0.4,0.36,237,1,90,82,2609,373,0.03,40,43,-1,2
+Artur Boruc,42,Goalkeeper,AFC Bournemouth,Eleven_Fifteen,14,1,1080,540,540,Poland,No,12,6,6,0,0,0,0,0,0,0,0,4,2,2,17,4,13,2,0,0,0,0,0,0,0,1.42,64,90,540,0,0.17,361,394,100,20
+Asmir Begović,35,Goalkeeper,AFC Bournemouth,Eleven_Fifteen,14,7,2160,1080,1080,Bosnia and Herzegovina,No,24,12,12,0,0,0,0,0,0,0,0,5,3,2,44,19,25,0,0,0,0,0,0,0,0,1.83,49,90,0,0,0,358,273,154,19
+Joshua King,30,Forward,AFC Bournemouth,Eleven_Fifteen,14,20,2974,1563,1411,Norway,No,35,18,17,12,9,3,3,3,0,5,1,9,6,3,54,20,34,3,0,0.45,0.09,0.36,0.52,0.19,248,1.63,55,85,991,991,0.09,49,157,-1,2
+Nathan Aké,27,Defender,AFC Bournemouth,Eleven_Fifteen,14,30,3412,1710,1702,Netherlands,No,38,19,19,4,3,1,0,0,0,0,0,10,6,4,66,23,43,3,0,0.11,0,0.11,0.16,0.05,853,1.74,52,90,1137,0,0.08,150,337,148,5
+Aaron Lennon,35,Midfielder,Burnley,Eleven_Fifteen,15,5,1217,487,730,England,Yes,16,7,9,1,1,0,1,1,0,0,0,4,2,2,20,8,12,1,0,0.15,0.07,0.07,0.18,0,1217,1.48,61,76,1217,1217,0.07,196,187,-1,10
+Ashley Barnes,32,Forward,Burnley,Eleven_Fifteen,15,10,2400,1307,1093,England,Yes,37,19,18,12,6,6,2,1,1,2,0,8,5,3,34,16,18,8,0,0.53,0.08,0.45,0.41,0.49,200,1.28,71,65,300,1200,0.3,27,172,-1,1
+Ben Mee,33,Defender,Burnley,Eleven_Fifteen,15,10,3420,1710,1710,England,Yes,38,19,19,0,0,0,2,1,1,0,0,8,5,3,57,27,30,9,0,0.05,0.05,0,0,0,0,1.5,60,90,380,1710,0.24,380,211,118,21
+Jack Cork,33,Midfielder,Burnley,Eleven_Fifteen,15,15,3313,1693,1620,England,Yes,37,19,18,1,1,0,2,1,1,0,0,8,5,3,54,27,27,6,0,0.08,0.05,0.03,0.05,0,3313,1.47,61,90,552,1657,0.16,249,204,-1,11
+Jeff Hendrick,30,Midfielder,Burnley,Eleven_Fifteen,15,10,2069,898,1171,Republic of Ireland,No,32,15,17,3,1,2,0,0,0,0,0,6,3,3,41,18,23,4,0,0.13,0,0.13,0.1,0.15,690,1.78,50,65,517,0,0.17,131,349,-1,6
+Joe Hart,35,Goalkeeper,Burnley,Eleven_Fifteen,15,6,1710,810,900,England,Yes,19,9,10,0,0,0,0,0,0,0,0,4,2,2,34,17,17,0,0,0,0,0,0,0,0,1.79,50,90,0,0,0,367,341,149,16
+Tom Heaton,36,Goalkeeper,Burnley,Eleven_Fifteen,15,3,1710,900,810,England,Yes,19,10,9,0,0,0,0,0,0,0,0,4,3,1,23,10,13,3,0,0,0,0,0,0,0,1.21,74,90,570,0,0.16,382,354,68,18
+Alex McCarthy,32,Goalkeeper,Southampton,Sixteen_Twenty,16,5,2250,1170,1080,England,Yes,25,13,12,0,0,0,0,0,0,0,0,4,2,2,37,16,21,1,0,0,0,0,0,0,0,1.48,61,90,2250,0,0.04,372,365,114,21
+Angus Gunn,26,Goalkeeper,Southampton,Sixteen_Twenty,16,10,1080,540,540,England,Yes,12,6,6,0,0,0,0,0,0,0,0,3,1,2,17,9,8,0,0,0,0,0,0,0,0,1.42,64,90,0,0,0,376,339,104,25
+Danny Ings,30,Forward,Southampton,Sixteen_Twenty,16,15,1668,922,746,England,Yes,24,13,11,7,3,4,3,3,0,3,0,6,2,4,26,13,13,1,0,0.54,0.16,0.38,0.29,0.48,238,1.4,64,70,1668,556,0.05,39,87,-1,2
+James Ward-Prowse,27,Midfielder,Southampton,Sixteen_Twenty,16,18,1942,942,1000,England,Yes,26,13,13,7,5,2,0,0,0,1,0,4,2,2,36,15,21,4,0,0.32,0,0.32,0.48,0.18,277,1.67,54,75,486,0,0.19,58,347,-1,1
+Matt Targett,27,Defender,Southampton,Sixteen_Twenty,16,7,1185,483,702,England,Yes,16,7,9,1,1,0,3,2,1,0,0,1,0,1,24,10,14,2,0,0.3,0.23,0.08,0.19,0,1185,1.82,49,74,593,395,0.15,183,51,151,11
+Ryan Bertrand,33,Defender,Southampton,Sixteen_Twenty,16,15,2160,1170,990,England,Yes,24,13,11,1,1,0,0,0,0,0,0,6,3,3,36,15,21,8,0,0.04,0,0.04,0.08,0,2160,1.5,60,90,270,0,0.33,245,366,117,13
+Stuart Armstrong,30,Midfielder,Southampton,Sixteen_Twenty,16,8,1432,469,963,Scotland,No,29,11,18,3,1,2,2,1,1,0,0,4,1,3,23,8,15,2,0,0.31,0.13,0.19,0.19,0.19,477,1.45,62,49,716,716,0.13,98,114,-1,6
+Glenn Murray,39,Forward,Brighton & Hove Albion,Sixteen_Twenty,17,3,2513,1383,1130,England,Yes,38,19,19,13,8,5,1,1,0,4,0,7,5,2,44,22,22,5,0,0.5,0.04,0.47,0.52,0.4,193,1.58,57,66,503,2513,0.18,24,227,-1,1
+Lewis Dunk,30,Defender,Brighton & Hove Albion,Sixteen_Twenty,17,12,3153,1550,1603,England,Yes,36,18,18,2,0,2,1,0,1,0,0,7,5,2,53,24,29,7,1,0.09,0.03,0.06,0,0.11,1577,1.51,59,88,450,3153,0.2,203,252,120,5
+Martín Montoya,31,Defender,Brighton & Hove Albion,Sixteen_Twenty,17,8,2166,1176,990,Spain,No,25,14,11,0,0,0,1,0,1,0,0,3,3,0,38,18,20,4,0,0.04,0.04,0,0,0,0,1.58,57,87,542,2166,0.17,294,229,128,13
+Mathew Ryan,30,Goalkeeper,Brighton & Hove Albion,Sixteen_Twenty,17,10,3060,1530,1530,Australia,No,34,17,17,0,0,0,0,0,0,0,0,6,4,2,52,25,27,2,0,0,0,0,0,0,0,1.53,59,90,1530,0,0.06,398,389,122,15
+Yves Bissouma,26,Midfielder,Brighton & Hove Albion,Sixteen_Twenty,17,15,1769,747,1022,Mali,No,28,13,15,0,0,0,0,0,0,0,0,5,4,1,30,14,16,5,0,0,0,0,0,0,0,1.53,59,63,354,0,0.25,402,293,-1,17
+Aron Einar Gunnarsson,33,Midfielder,Cardiff City,Sixteen_Twenty,18,2.5,2274,1240,1034,Iceland,No,28,14,14,1,1,0,1,1,0,0,0,8,4,4,37,20,17,5,0,0.08,0.04,0.04,0.07,0,2274,1.46,61,81,455,2274,0.2,232,234,-1,9
+David Junior Hoilett,32,Forward,Cardiff City,Sixteen_Twenty,18,4.5,2142,1008,1134,Canada,No,32,17,15,3,2,1,1,0,1,0,0,9,5,4,42,20,22,4,0,0.17,0.04,0.13,0.18,0.08,714,1.76,51,67,536,2142,0.17,137,220,-1,7
+Joe Bennett,32,Defender,Cardiff City,Sixteen_Twenty,18,3,2641,1142,1499,England,Yes,30,13,17,0,0,0,1,1,0,0,0,9,5,4,43,18,25,5,0,0.03,0.03,0,0,0,0,1.47,61,88,528,2641,0.17,324,241,112,23
+Lee Peltier,35,Defender,Cardiff City,Sixteen_Twenty,18,1.5,1542,521,1021,England,Yes,20,7,13,0,0,0,0,0,0,0,0,6,2,4,21,9,12,4,0,0,0,0,0,0,0,1.23,73,77,386,0,0.23,352,391,72,21
+Neil Leonard Dula Etheridge,32,Goalkeeper,Cardiff City,Sixteen_Twenty,18,8,3420,1710,1710,Philippines,No,38,19,19,0,0,0,0,0,0,0,0,10,5,5,61,34,27,2,0,0,0,0,0,0,0,1.61,56,90,1710,0,0.05,363,392,134,17
+Sean Morrison,31,Defender,Cardiff City,Sixteen_Twenty,18,5,3040,1600,1440,England,Yes,34,18,16,1,0,1,3,2,1,0,0,9,4,5,57,34,23,6,0,0.12,0.09,0.03,0,0.06,3040,1.69,53,89,507,1013,0.18,255,164,140,8
+Ryan Guno Babel,35,Forward,Fulham,Sixteen_Twenty,19,5,1260,668,592,Netherlands,No,16,9,7,5,3,2,3,3,0,0,0,3,2,1,24,12,12,3,0,0.57,0.21,0.36,0.4,0.3,252,1.71,53,79,420,420,0.21,47,61,-1,3
+Sergio Rico,29,Goalkeeper,Fulham,Sixteen_Twenty,19,12,2610,1350,1260,Spain,No,29,15,14,0,0,0,0,0,0,0,0,5,3,2,53,24,29,1,0,0,0,0,0,0,0,1.83,49,90,2610,0,0.03,320,406,153,21
+Aaron Mooy,32,Midfielder,Huddersfield Town,Sixteen_Twenty,20,14,2327,1190,1137,Australia,No,29,15,14,3,1,2,1,0,1,1,0,4,3,1,46,20,26,4,0,0.15,0.04,0.12,0.08,0.16,776,1.78,51,80,582,2327,0.15,144,233,-1,3
+Elias Kachunga,30,Forward,Huddersfield Town,Sixteen_Twenty,20,3,1181,611,570,Congo DR,No,20,9,11,0,0,0,0,0,0,0,0,2,1,1,28,14,14,2,0,0,0,0,0,0,0,2.13,42,59,591,0,0.15,303,259,-1,12
+Jonas Lössl,33,Goalkeeper,Huddersfield Town,Sixteen_Twenty,20,5,2777,1427,1350,Denmark,No,31,16,15,0,0,0,1,1,0,0,0,5,3,2,52,22,30,1,0,0.03,0.03,0,0,0,0,1.69,53,90,2777,2777,0.03,333,247,139,25
+Steve Mounié,28,Forward,Huddersfield Town,Sixteen_Twenty,20,10,1777,1009,768,Benin,No,31,16,15,2,2,0,3,1,2,0,0,5,3,2,34,15,19,2,1,0.25,0.15,0.1,0.18,0,889,1.72,52,57,592,592,0.15,168,90,-1,6
