@@ -1,0 +1,163 @@
+---
+title: "Assessing Premier League Player Valuation: The Impact of Age, Position, Playtime and Other Variables on Market Value" 
+author: "Stat Warriors"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+header-includes:
+- \usepackage{setspace}
+- \onehalfspacing
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, highlight=FALSE, comment=NA, warnings=FALSE,message=FALSE)
+```
+
+```{r, echo=FALSE, warning=FALSE,results=FALSE}
+## Use this chunk for reading in packages.
+## Use this chunk for reading in the data, combining the data, and any other major data cleaning that is not relevant to show.
+## Remove the ## before all code.
+library(dplyr)
+soccerdata<-read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTTPKPRxczOS1SkmereE95_6ujc9b6oEcjJGCOSsPQAD-Cwc82uoC-c1rWLbYwqX2s_MftoTDTldHrf/pub?gid=443710304&single=true&output=csv",header=T)
+head(soccerdata)
+```
+
+# Pledge
+
+Please type your names in the appropriate space below. Failing to do so will result in a 0 on this assignment.
+
+"We have neither given nor received unauthorized aid on this assignment"
+
+-   Member 1: William Wells
+-   Member 2: Saketh Vangara
+-   Member 3: Eshaan Sharma
+-   Member 4: Sai Chundi
+
+\newpage
+
+## Introduction
+
+As a group, we all shared an interest in soccer, specifically how they are valued in contrast to their peers. Across numerous leagues, soccer players have been valued primarily based on their performance, which can be broken down into a plethora of factors. In doing so, there are a multitude of reasons as to why one player would be valued higher than another, such as their age, goals scored, etc. In our study, we will study the variables of age, position, and minutes played, alongside other key factors, in an attempt to answer the following questions:
+
+1.  Do older players have a higher transfer market value than younger players, on average?
+
+2.  Do offensive players have a higher transfer market value than defensive players?
+
+3.  Do players with a higher play time (minutes played) have a greater transfer market value than players with a lower play time?
+
+When looking at the rationale behind transfer market values and players' performances, studying the phenomena is important because it can help clubs make smarter decisions while buying or selling players. Knowing whether factors such as age, position, minutes played, and others impact a player’s value can improve contract negotiations and building a squad. The rationale for studying soccer players’ transfer market values is tied to our motivations for our three primary variables of interest.
+
+For example, younger players, particularly under 21, often command higher fees because they are seen as investments due to their potential as opposed to players beyond their mid-30s, who experience a decline (Metelski, 2021). Additionally, examining player positions is crucial, as forwards usually command higher fees (Zhou, 2019). Minutes played can also significantly impact a player’s value. The correlation between minutes played and value is supported by analyses relating to player performance metrics, where playing time boosts a player’s visibility and in turn their market demand (Besson, Ravenel, Poli, 2020).  Moreover, as fees keep rising, this research can help ensure fair player valuations and financial stability in the game.
+
+We believe that age, position, and minutes played will be the most crucial factors in determining a player’s valuation, and thus would like to study whether this is in fact true and if other relevant factors are potentially as influential, if not more, to determining a player’s transfer market value.
+
+## Data Description
+
+The data compiled are various player statistics from the 2018-2019 Premier League season. This includes variables such as player age, position, wages,  nationality, and minutes played. We have collected this data on an Excel sheet and randomly chose 100 players from the 2018-19 season. The players are classified in columns according to the club they play and the variables are in the rows. Our analysis of this data will help us determine the transfer market value of the players.
+
+While conducting research, we found a data compilation of player statistics from the 2018-19 premier league season. Using this data as our base, we made the data more specific to our project. Due to the project’s constraint of not choosing more than 5 levels, we had to manipulate the data to create different categorical levels according to the club ranking at the end of the season (1-5, 6-10, 11-15, 16-20). Clubs regulations require a minimum number of England players in their squad, hence, we hypothesized that this could lead to English players having an inflated valuation. This led us to categorically assign players as either ‘England’ or ‘Non-England’ players to determine the effect of their nationality on their valuation.
+
+One of the considerations is that our histogram is skewed toward the right which can lead to distorted variability and incorrect hypothesis testing. We need to look for the risk of increased multicollinearity as sports tend to have statistics that have a high correlation with one another. Our data was also limited to what was available for free online as more in-depth statistics were only available in paid versions. Our player statistics data sources were Transfermarkt and FootyStats. Transfermarkt is known for its reliable market valuations and player statistics, while FootyStats provides in-depth performance metrics. However, some of the data cannot be cross-checked with other sources as compiling data in soccer is a tedious task hence there are not many sources that provide in-depth soccer statistics.
+
+## Exploratory Data Analysis
+
+```{r, echo=FALSE, out.width="55%"}
+## Use this setting of Code chunk for any plots you wish to make
+## Refer to the Rmarkdown guide for sizing informaiton on your plots
+
+
+#histogram of response variable
+hist(soccerdata$Valuation, xlab="Valuation", main="Histogram of Valuation") 
+
+#Scatter plots for quantitative variables
+plot(soccerdata$Age, soccerdata$Valuation,xlab="Age",ylab="Valuation", main=)
+plot(soccerdata$minutes_played_overall, soccerdata$Valuation, xlab="Minutes Played Overall", ylab="Valuation")
+
+#Box plots for Qualitative
+boxplot(Valuation~Position,soccerdata, ylab="Valuation")
+boxplot(Valuation~Club.Ranking.Group,soccerdata, ylab="Valuation")
+boxplot(Valuation~England,soccerdata, ylab="Valuation")
+```
+
+```{r, echo=FALSE, warning=FALSE,results=FALSE}
+## Use this chunk to compute any summary statistics that you want to use
+## in your conclusions. 
+## These will not print in your report
+
+#reduced data table (removed variables not being used)
+soccerdatared <- select(soccerdata, Valuation, Age, Position, Club.Ranking.Group, minutes_played_overall, England, appearances_overall, goals_overall, assists_overall, clean_sheets_overall, conceded_overall, goals_involved_per_90_overall, min_per_match)
+
+soccerdatared
+
+soccermod<-lm(Valuation~., data=soccerdatared)
+summary(soccermod)
+
+print("Five number summary")
+fivenum(soccerdata$Valuation) #five number summary
+```
+
+\newpage
+
+## Conclusions
+
+As seen in our histogram for valuation,  our response variable, we can identify it being unimodal, skewed right, and not continuous. The majority of players’ valuations seem to lie between \$0-50 million dollars, with most being between about \$0-10 million dollars. Additionally, there is a gap in our histogram for player valuations between around \$65-100 million. In its current state, our response variable would not be suitable for regression. To make it suitable for regression, we would have to apply a transformation on our model, such as a square root or log transformation. Then, we could reevaluate the distribution of the response variable in a transformed model to determine if the criteria for regression is satisfied.
+
+The graph between age and valuation indicates that player valuation tends to peak around the mid-20's to early 30’s, portraying this age range as most valuable. As age increases beyond 30, we see a gradual decline in valuation, particularly those beyond 35. These trends imply that younger players may be valued higher due to potential longevity and performance expectations. Moreover, players around 30 years old appear to have a wider range of valuations, some reaching as high as \$120-150 million, suggesting that peak performance and market demand align with this age range. 
+
+Our scatter plot of minutes played and valuation shows most data points clustered in the lower valuation range, with most players valued under 50 despite varying minutes on the field. However, a few outliers with higher valuations appear around the 2500-minute mark, indicating that some players hold high valuations without leading in minutes played. This distribution suggests that player valuation is influenced by factors beyond playing time, as high valuations are observed across a range of minutes played.
+
+The boxplot analyzing valuation vs position shows that forwards generally have the highest valuations as indicated by their higher median and broader IQR range. Goalkeepers, defenders and midfielders have similar variation distributions, but defenders show the lowest mean and narrowest range among all the positions. Moreover, forwards and goalkeepers have more outliers in high valuations compared to players in other roles. These outliers imply that exceptional talent in these positions can attract significantly higher market values, while the valuation of most players within the position group remains consistent. 
+
+Our boxplot summary for the club rankings groups vs valuation indicates that players on the teams ranked in the top five of the Premier League are likely to have higher valuations compared to players on teams that ranked anywhere below. The median valuation for players on the top five teams is a little under \$50 million. The distribution of the box plots suggest that players on teams ranked higher would likely garner a higher valuation, whereas players on teams ranked in the lower half of league would have lower valuations. The three outliers suggest that those players performed exceptionally in contrast to where their team stood in the rankings, thus leading to their larger valuations.
+
+The boxplot comparing valuations of English and non-English players reveals a broader range for non-English players. English players' valuations are more tightly clustered around the median, indicating less variability and suggesting similar valuation levels. In contrast, non-English players are more widespread, showing greater diversity in valuations. This difference suggests that valuation factors may vary more significantly for non-English players.
+
+Based on our preliminary exploratory data analysis, we are inclined to believe players between the age range of 25-30 (older players) tend to have the highest market values as that's when players are in their physical prime. Moreover, forwards tend to have a higher valuation compared to players in other positions. with their outliers having significantly higher valuations, reaching as high as \$150 million. In addition, players who play a higher number of minutes do not consistently have higher valuations, suggesting that while playing time might contribute to valuation, it is not a standalone predictor.
+
+When looking at variables that weren’t visualized, appearances are an important predictor because it reflects a player’s consistency and reliability which often directly correlates with how a player is valued. Goals scored is another variable, and it directly contributes to a player’s valuation as scoring is often a primary measure of offensive effectiveness. Assists are also valuable as they best represent a player’s ability to create scoring opportunities for their team, adding to their overall contribution. The number of clean sheets is critical for goalkeepers, as it shows effectiveness in the goal. Conceded goals can negatively impact a player’s valuation by indicating weaknesses in defense when they are on the pitch. Lastly, goal involvement per 90 minutes combines scoring and assist rates, reflecting a player’s overall impact relative to the time played.
+
+To move forward with our most important predictors in a regression analysis, we would want to start by transforming the response variable (square root or log transformation) to work with a distribution that is suitable for regression. From there, we would revisit the exploratory data analysis and look at the summary statistics and potential correlations to understand our predictors’ relationships to the response variable. From there, we would investigate whether multicollinearity is present, perform an appropriate variable screening procedure, and conduct a residual analysis, leading us into how we develop our final model, fitted with the most important predictors.\
+\newpage
+
+## Appendix A: Data Dictionary
+
+|      **Variable Name**       | **Abbreviated Name** |                                                                          **Description**                                                                           |
+|:-----------:|:-----------:|:---------------------------------------------:|
+|          Valuation           |         val          |                                                             Valuation of player in millions of dollars                                                             |
+|             Age              |         age          |                                                                     Age of the player in years                                                                     |
+|           Position           |         pos          |                                                         Position of player (forward, defender, goalkeeper)                                                         |
+|         Club.Ranking         |         rank         |                                                         Rank of club as categories 1-5, 6-10, 10-15, 16-20                                                         |
+|    minutes_played_overall    |         min          |                                                    Total number of minutes played throughout the entire season                                                     |
+|           England            |         eng          |                                                             Whether or not the player is from England                                                              |
+|     appearances_overall      |         app          |                                                          Number of times the player appears on the field                                                           |
+|        goals_overall         |         goal         |                                                   Total number of goals the player scored throughout the season                                                    |
+|       assists_overall        |         ast          |                                                    Total number of assists the player had throughout the season                                                    |
+|     clean_sheets_overall     |        clean         |   Total number of clean sheets the player had throughout the season. A clean sheet is when the team prevents the other team from scoring any goals in the match    |
+|       conceded_overall       |         conc         | Total number of conceded games the player had throughout the season. A conceded game is when the team fails to stop the opposing team from scoring points or goals |
+| goal_involved_per_90_overall |         invo         |                        The number of goals a player would score if they played a full 90 minute match, based on their current scoring rate                         |
+
+\newpage
+
+## Appendix B: Data Rows
+
+```{r, echo=FALSE}
+# Use head() function to output first several rows
+head(soccerdatared)
+```
+
+\newpage
+
+## Appendix C: References
+
+### Introduction
+
+1.  James, S. (n.d.). How do you value a player? The New York Times. <https://www.nytimes.com/athletic/3085749/2022/01/27/premier-league-how-do-you-value-a-player/>
+2.  Metelski, A. (2021, April 30). Factors affecting the value of football players in the transfer market. ResearchGate. <https://www.researchgate.net/publication/351335017_Factors_affecting_the_value_of_football_players_in_the_transfer_market>
+3.  Poli, R., Ravenel, L., & Besson, R. (2020, March). Scientific evaluation of the transfer value of football players. Monthly Report 53. <https://football-observatory.com/IMG/sites/mr/mr53/en/>
+4.  Zhou, W. (2019). Which Factors Decide the Market Value of Soccer Players: An Empirical Evidence from European League. Clausius Press. <https://www.clausiuspress.com/conferences/LNEMSS/EMSD%202019/19EMSD057.pdf>
+
+### Data
+
+1.  Premier League 18/19. (2018). Transfermarkt.us. <https://www.transfermarkt.us/premier-league/startseite/wettbewerb/GB1/saison_id/2018>
+2.  Download Soccer / Football Stats Database to CSV \| FootyStats. (2019). Footystats.org. <https://footystats.org/download-stats-csv>
